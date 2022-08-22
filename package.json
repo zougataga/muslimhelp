@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "axios": "^0.27.2",
+    "discord-inline-replys": "^1.0.3",
+    "discord.js": "^13.6.0",
+    "fs": "^0.0.1-security",
+    "quick.db": "^7.1.3",
+    "util": "^0.12.4"
+  }
+}
