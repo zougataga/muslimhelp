@@ -8,7 +8,7 @@ const client = new Client({
 const { readdirSync } = require('fs');
 const db = require("quick.db");
 
-// process.on("unhandledRejection", err => {console.log(err);})
+ process.on("unhandledRejection", err => {console.log(err);})
 
 client.db = db;
 client.config = require('./config.json');
