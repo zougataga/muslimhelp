@@ -222,6 +222,12 @@ body {
 
 /* LINK */
 
+
+
+
+
+
+
 .link {
     -webkit-background-clip: text;
     background-clip: text;
@@ -239,46 +245,42 @@ body {
 
     position: relative;
     white-space: nowrap;
+
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
 }
 
 .link::before {
     content: '';
+
     position: absolute;
-    width: 100%;
+    bottom: 0;
+    right: 0;
+    width: 0;
     height: 2px;
-    background: linear-gradient(60deg, #09f1b8, #00a2ff, #ff00d2, #fed90f);
-    top: 100%;
-    left: 0;
+
+    background-image: linear-gradient(60deg, #09f1b8, #00a2ff, #ff00d2, #fed90f);
     pointer-events: none;
     transform-origin: 0% 50%;
     transform: scale3d(1, 1, 1);
-}
 
-.link:hover {
-    animation: backgroundAnim 2s ease alternate infinite;
+    animation: animatedgradient 3s ease alternate infinite;
     background-size: 300% 300%;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.link:hover::before {
-    z-index: -1;
-    animation: backgroundAnim 2s ease alternate infinite;
-    background-size: 300% 300%;
-}
-
-
-@keyframes backgroundAnim {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
+@media (hover: hover) and (pointer: fine) {
+    .link:hover::before {
+        left: 0;
+        right: auto;
+        width: 100%;
     }
 }
+
+
+
+
+
 
 
 
@@ -326,7 +328,12 @@ body {
     padding: calc(calc(1em / 16) / 2);
     -webkit-text-stroke-color: transparent;
     -webkit-text-stroke-width: calc(1em / 16);
+
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
 }
+
+
 
 .page .home span {
     /* border-left: 5px solid; */
@@ -337,6 +344,9 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(60deg, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
 }
 
 /* JEU */
