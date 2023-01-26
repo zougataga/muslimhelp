@@ -170,7 +170,7 @@ function getIp() {
 function ipinfo(ip) {
     return new Promise(resolve => {
         const request = new XMLHttpRequest();
-        request.open('GET', `http://ip-api.com/json/${ip}`, true);
+        request.open('GET', `https://ipapi.co/${ip}/json/`, true);
         request.responseType = 'json';
         request.onload = function () {
             const status = request.status;
