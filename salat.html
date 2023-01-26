@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=*, initial-scale=1.0">
+
+    <title>MuslimHelp v1 - Heure de prière</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <button onclick="goTop()" id="topBtn" title="Go to top">
+        <div class="icon">
+            <svg fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M13.25 8.75L9.75 12L13.25 15.25"></path>
+            </svg>
+        </div>
+    </button>
+    <script>
+        const topBtn = document.querySelector("#topBtn");
+        window.onscroll = function () {
+            topBtn.style.display = document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ? "block" : "none";
+        };
+
+        function goTop() {
+            window.scrollTo(0, 0);
+        }
+    </script>
+    <div class="retour">
+        <button title="retour" onclick="window.location.href = './index.html'">↩</button>
+    </div>
+
+    <div class="zone_titre">
+        <span class="ar"></span><br>
+        <h1>Chargement...</h1>
+        <p></p>
+    </div>
+    <section class="salat">
+        <div class="input">
+            <input type="text" placeholder="Entrer votre position. (vile, ex: Paris)">
+            <button disabled="" type="button">GO</button>
+        </div>
+    </section>
+
+    <h3 id="titreday">?????</h3>
+    <div class="surah" id="salatday"></div>
+
+    <button onclick="voirPlus(this, 1)">Voir plus</button>
+
+        <h3 style="display: none;" id="titreweek">?????</h3>
+        <div style="display: none;" class="surah" id="salatweek"></div>
+        <button id="voirplus" style="display: none;" onclick="voirPlus(this, 2)">Voir plus</button>
+
+        <h3 style="display: none;" id="titremonth">?????</h3>
+        <div style="display: none;" class="surah" id="salatmonth"></div>
+
+    <script src="./assets/js/salat.js"></script>
+</body>
+
+</html>
