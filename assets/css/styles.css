@@ -300,11 +300,11 @@ button:disabled {
     opacity: 0.5;
 }
 
-.salat input.valid {
+ .valid {
     border: 2px solid rgb(9, 138, 31);
 }
 
-.salat input.novalid {
+.novalid {
     border: 2px solid rgb(211, 46, 46);
 }
 
