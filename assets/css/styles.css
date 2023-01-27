@@ -278,6 +278,7 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
+
 /*
 .salat .input {
      display: flex; 
@@ -300,12 +301,12 @@ button:disabled {
     opacity: 0.5;
 }
 
- .valid {
-    border: 2px solid rgb(9, 138, 31);
+.valid {
+    border: 2px solid rgb(9, 138, 31)!important;
 }
 
 .novalid {
-    border: 2px solid rgb(211, 46, 46);
+    border: 2px solid rgb(211, 46, 46)!important;
 }
 
 
