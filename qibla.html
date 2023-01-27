@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=*, initial-scale=1.0">
+
+    <title>MuslimHelp v1 - Qibla direction</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <div class="retour">
+        <button title="retour" onclick="window.location.href = './index.html'">↩</button>
+    </div>
+
+
+    <section class="salat">
+        <div class="input">
+            <input type="text" placeholder="Entrer votre position. (vile, ex: Paris)">
+            <button disabled="" type="button">GO</button>
+        </div>
+    </section>
+    <div class="compass">
+        <div class="arrow"></div>
+        <div class="compass-circle"></div>
+        <div class="my-point"></div>
+    </div>
+    <h3 id="direction">Direction du Compas: ???°</h3>
+    <p id="distance">La <strong>Qibla</strong> est à <strong>??? km</strong> de <strong>????</strong></p>
+
+    <script src="./assets/js/qibla.js"></script>
+</body>
+
+</html>
