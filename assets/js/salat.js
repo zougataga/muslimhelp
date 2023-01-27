@@ -87,7 +87,7 @@ async function modifSalat(city) {
     console.log(calendar);
     ar.innerHTML = `${jour.toString().padStart(2, '0')}/${month.toString().padStart(2, '0')}/${anne}`;
     title.innerHTML = `Heures de prières à ${city}`;
-    desc.innerHTML = `Prochaine pirère (????): ??:??:??`;
+    // desc.innerHTML = `Prochaine pirère (????): ??:??:??`;
 
     input.value = city;
     input.classList.remove("novalid");
