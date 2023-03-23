@@ -1,6 +1,6 @@
 {
     "name": "muslimhelp",
-    "version": "1.0.0",
+    "version": "1.1.2",
     "description": "Simple package to have the hours of prayers, quibla direction and other things in relation to Islam",
     "main": "index.js",
     "scripts": {
@@ -11,16 +11,15 @@
         "url": "git+https://github.com/zougataga/muslimhelp.git"
     },
     "keywords": [
+        "muslim",
+        "islam",
+        "salat",
+        "quibla",
+        "surah",
+        "free",
         "database",
-        "db",
-        "easy",
-        "nosql",
-        "nosqlite"
+        "db"
     ],
-    "dependencies": {
-        "cipherdata": "^1.0.1",
-        "fs": "^0.0.1-security"
-    },
     "author": "zougataga",
     "license": "ISC",
     "bugs": {
